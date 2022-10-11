@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: rgb(243, 243, 243);
+    overflow-x: hidden;
+    user-select: none;
+}
+
+#header{
+    background-color: rgb(47, 167, 127);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    line-height: 70px;
+    font-size: xx-large;
+    margin-left: 10px;
+}
+
+span{
+    color: aqua;
+}
+
+nav{
+    height: 70px;
+    background: rgb(45, 139, 108);
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    border: 3px;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: rgb(45, 139, 108);
+    transition: .5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: white;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid black;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    text-decoration: none;
+    list-style: none;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+    text-decoration: none;
+    list-style: none;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+
+
+#main{
+    height: 100%;
+    margin-top: 57px;
+    display: flex;
+    align-items: flex-start;
+}
+.card{
+    width: 500px;
+    background-color: white;
+    margin-left: 78%;
+    box-shadow: 0px 0px 10px;
+}
+.card div{
+    height: 400px;
+    width: 100%;
+}
+.card h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.UserName{
+    margin-left: 30px;
+    width: 90%;
+    height: 40px;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+}
+.password{
+    margin-left: 30px;
+    width: 90%;
+    height: 40px;
+}
+.marg-login{
+    margin-left: 30px;
+}
+.submit{
+    border: 3px;
+    width: 90px;
+    height: 50px;
+    color: white;
+    background-color: rgb(47, 167, 127);
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.submit:hover{
+    background-color: rgb(45, 139, 108);
+}
+.signin{
+    
+    text-align: center;
+}
+.li-red{
+  color: red;
+}
+.li-red:hover{
+  color: red;
+}
+
+
+@media all and (max-width: 760px) {
+    body{
+        font-family: 'Cairo', sans-serif;
+        background-color: rgb(243, 243, 243);
+        overflow-x: hidden;
+        user-select: none;
+    }
+    
+    #header{
+        background-color: rgb(47, 167, 127);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo{
+        line-height: 70px;
+        text-align: center;
+        font-size: xx-large;
+        margin-left: 10px;
+    }
+    
+    span{
+        color: aqua;
+    }
+    
+    nav{
+        height: 70px;
+        margin-bottom: 55%;
+        width: 100%;
+        text-align: center;
+      
+        background: rgb(45, 139, 108);
+        box-shadow: 0 3px 15px rgba(0,0,0,.4);
+      }
+      nav ul{
+        float: right;
+        width: 100%;
+        flex-wrap: nowrap;
+        margin-right: 0px;
+      }
+      nav ul li{
+        display: inline-block;
+        width: 100%;
+        flex-wrap: nowrap;
+      }
+      nav ul li a{
+        color: black;
+
+        flex-wrap: nowrap;
+        text-decoration: none;
+        list-style: none;
+        display: block;
+        border: 3px;
+        padding: 0 15px;
+        line-height: 70px;
+        font-size: 20px;
+        background: rgb(45, 139, 108);
+        transition: .5s;
+      }
+      nav ul li a:hover,
+      nav ul li a.active{
+        color: white;
+      }
+      nav ul ul{
+        position: absolute;
+        top: 85px;
+        border-top: 3px ;
+        opacity: 0;
+        visibility: hidden;
+      }
+      nav ul li:hover > ul{
+        top: 43%;
+        margin-left: 41%;
+        opacity: 1;
+        visibility: visible;
+        transition: .3s linear;
+      }
+      nav ul ul li{
+        width: 150px;
+        text-decoration: none;
+        list-style: none;
+        display: list-item;
+        position: relative;
+        border: 1px solid #042331;
+        border-top: none;
+        
+      }
+      nav ul ul li a{
+        line-height: 50px;
+        text-decoration: none;
+        list-style: none;
+      }
+      nav ul ul ul{
+        border-top: none;
+      }
+      nav ul ul ul li{
+        position: relative;
+        top: -70px;
+        left: 150px;
+      }
+      nav ul ul li a i{
+        margin-left: 45px;
+      }
+    .li-red{
+        color: red;
+    }
+    .li-red:hover{
+        color: red;
+    }
+    
+    #main{
+        height: 100%;
+        margin-top: 57px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .card{
+        width: 400px;
+        background-color: white;
+        margin-left: 20%;
+        margin-top: 90px ;
+        box-shadow: 0px 0px 10px;
+    }
+    .card div{
+        height: 400px;
+        width: 100%;
+    }
+    .card h1{
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .UserName{
+        margin-left: 30px;
+        width: 90%;
+        height: 40px;
+        font-weight: bold;
+        font-family: 'Cairo', sans-serif;
+    }
+    .password{
+        margin-left: 30px;
+        width: 90%;
+        height: 40px;
+    }
+    .marg-login{
+        margin-left: 30px;
+    }
+    .submit{
+        border: 3px;
+        width: 90px;
+        height: 50px;
+        color: white;
+        background-color: rgb(47, 167, 127);
+        margin-left: 30px;
+        margin-top: 20px;
+        font-size: 17px;
+    }
+    .submit:hover{
+        background-color: rgb(45, 139, 108);
+    }
+    .signup{
+        color: black;
+        text-align: center;
+    }
+}
